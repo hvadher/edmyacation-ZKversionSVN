@@ -1,3 +1,10 @@
+DROP TABLE IF EXISTS `myvacation`.`sequence_table`;
+CREATE TABLE `sequence_table` (
+  `SEQ_NAME` varchar(100) NOT NULL,
+  `SEQ_COUNT` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`SEQ_NAME`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
+
 DROP TABLE IF EXISTS `myvacation`.`ed_user`;
 CREATE TABLE `myvacation`.`ed_user` (
   `UserID` int(11) NOT NULL,

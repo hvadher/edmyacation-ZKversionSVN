@@ -1,3 +1,7 @@
+DELETE From `myvacation`.`sequence_table`;
+
+INSERT INTO `myvacation`.`sequence_table`(`SEQ_NAME`,`SEQ_COUNT`) VALUES("UserVacationHist_SEQ",0);
+
 DELETE From `myvacation`.`ed_user`;
 
 INSERT INTO `myvacation`.`ed_user` (`UserID`, `FirstName`, `LastName`, `EmailAddress`, `Password`) VALUES (1, 'Bilal', 'Ahmed', 'bilal@ellisdon.com', 'bilal');
