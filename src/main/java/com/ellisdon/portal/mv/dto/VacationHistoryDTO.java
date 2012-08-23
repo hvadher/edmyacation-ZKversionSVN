@@ -17,8 +17,11 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.TableGenerator;
 
 /**
  * This Class is a Data Transfer Object for table VacationHistory, use to transfer data between 
@@ -34,7 +37,10 @@ import javax.persistence.Table;
 public class VacationHistoryDTO {
 	
 	@Id
-	@Column(name = "iduservacation")
+	@GeneratedValue(strategy=GenerationType.TABLE, generator="UserVacationHist_SEQ")
+    @TableGenerator(name="UserVacationHist_SEQ", table="SEQUENCE_TABLE", pkColumnName="SEQ_NAME",
+    				valueColumnName="SEQ_COUNT", pkColumnValue="UserVacationHist_SEQ", allocationSize=1)
+	@Column(name = "iduservacation", unique=true, nullable=false)
 	private int uservacationid;
 
 	@Column(name = "userid")
