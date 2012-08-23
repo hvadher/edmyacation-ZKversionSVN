@@ -2,6 +2,7 @@ package com.ellisdon.portal.mv.model;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.ellisdon.portal.mv.exception.MyVacationRuntimeException;
@@ -21,6 +22,7 @@ import com.ellisdon.portal.mv.util.CommanConstants;
  */
 
 @Component("userBean")
+@Scope("session")
 public class UserBean {
 
 	private static final Logger logger = MyVacationLogger.getLogger(UserBean.class);

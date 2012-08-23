@@ -18,6 +18,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Scope;
 import org.zkoss.zul.Grid;
 import org.zkoss.zul.GroupsModelArray;
 
@@ -41,6 +42,7 @@ import com.ellisdon.portal.mv.util.Utility;
  */
 
 @Component("uservacBean")
+@Scope("session")
 public class UserVacationBean {
 
 	private int userid;
