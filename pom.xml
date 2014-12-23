@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   <name>ED MyVacation </name>
   
-  <!--  Comments Added -->
+  <!--  Comments Added - For GITHub-->
     <repositories>
    <repository>
      <id>ZK EE</id>
