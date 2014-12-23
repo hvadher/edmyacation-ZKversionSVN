@@ -18,8 +18,14 @@
         <name>JBoss Maven Repsitory</name>
         <url>https://repository.jboss.org/nexus/content/groups/public/</url>
     </repository>
+    
+   <repository>
+     <id>zk repository</id>
+     <url>http://mavensync.zkoss.org/maven2</url>
+   </repository>
    
   </repositories>
+  
   
   <properties>
     <spring.version>3.0.5.RELEASE</spring.version>
@@ -92,13 +98,14 @@
 		  <version>3.0RC</version>
 		</dependency>
 		
-		<!-- ZK Perforamance Meter -->  	
+		<!-- ZK Perforamance Meter   	
 		<dependency>
 		  <groupId>com.ellisdon.zk.performancemonitor</groupId>
 		  <artifactId>zk.performancemonitor</artifactId>
 		  <version>1.0</version>
 		</dependency>
-
+  -->
+  
 		<!-- Log4J -->
 		<dependency>
 			<groupId>log4j</groupId>
