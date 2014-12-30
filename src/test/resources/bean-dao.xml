@@ -8,7 +8,7 @@
 							http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
 	<!--
-		JNDI connection to datasource - Comment this out when ready to deploy
+		JNDI Connection to datasource - Comment this out when ready to deploy
 		on server <jee:jndi-lookup id="dataSource"
 		jndi-name="java:/g3customerDS"/>
 	-->
