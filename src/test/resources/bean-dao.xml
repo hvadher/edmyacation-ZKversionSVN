@@ -13,8 +13,10 @@
 		jndi-name="java:/g3customerDS"/>
 	-->
 
-     <!--  Enable the configuration of transactional behavior of application Service beans
-           annotated with @Transactional -->
+     <!--  @Transactional :
+	       Enable the configuration of transactional behaviour of 
+		   application Service beans annotated with @Transactional 
+     -->
      <tx:annotation-driven transaction-manager="transactionManager"/>
 		
 	<!-- Hibernate transaction manager bean -->	
